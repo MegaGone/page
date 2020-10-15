@@ -1,0 +1,703 @@
+/* 1250px */
+@media (max-width: 1240px){
+    .wrap{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    #deck{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .card{
+        width: 15%;
+        margin: 23px;
+    }
+
+    .card h3{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card p{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #content{
+        width: 61%;
+    }
+
+    #aside{
+        width: 25%;
+    }
+
+    #footer .wrap > div{
+        width: 26%;
+        margin: 35px;
+    }
+}
+
+/* 1167px */
+@media (max-width:1167px){
+    .card{
+        width: 15%;
+        margin: 21px;
+    }
+
+    #deck{
+        margin-left: 25px;
+    }
+
+    .card .sub{
+        font-size: 15px;
+    }
+
+    #footer h5{
+        font-size: 30px;
+    }
+
+    #footer .wrap > div{
+        width: 26%;
+        margin: 33px;
+    }
+
+    #browsers img{
+        width: 30px;
+    }
+
+    #content{
+        width: 60%;
+    }
+
+    #aside{
+        width: 25%;
+    }
+
+    #banner{
+        margin-left: -8px;
+    }
+}   
+
+@media(max-width: 1050px){
+    #deck{
+        margin-left: 8px !important;
+        margin: 0px auto;
+    }
+
+    #banner{
+        margin-left: -8px;
+    }
+}
+
+@media(max-width:1000px){
+    #footer .wrap > div {
+        width: 26%;
+        margin: 32px;
+    }
+
+    #banner{
+        margin-left: -8px;
+    }
+}
+
+@media(max-width: 980px){
+    .card{
+        width: 16%;
+        margin: 15px;
+    }
+
+    #footer .wrap > div{
+        width: 25%;
+        margin: 35px;
+    }
+
+    #footer h5{
+        font-size: 25px;
+    }
+
+    #footer #html{
+        width: 95%;
+    }
+
+
+}
+
+@media(max-width:950px){
+    #deck{
+        margin-left: 12px !important;
+        margin-right: 15px;
+    }
+
+    #footer .wrap > div{
+        width: 24%;
+        margin: 39px;
+    }
+
+    #banner{
+        margin-left: -7px;
+    }
+}
+
+@media(max-width:925px){
+    .card .sub {
+        font-size: 14px;
+    }
+
+    #sidebar{
+        width: 25%;
+    }
+
+    #content{
+        width: 65%;
+    }
+
+    #footer .wrap > div{
+        width: 24%;
+        margin: 38px;
+    }
+
+    form input[type="text"]{
+        width: 84%;
+    }
+
+    #login input[type="email"],input[type="password"]{
+        width: 85%;
+    }
+
+    #login input[type="submit"], #login input[type="button"]{
+        width: 64px;
+        font-size: 13px;
+    }
+
+    #login a{
+        font-size: 13px;
+    }
+
+    #networks .overlay{
+        font-size: 11px;
+        line-height: 20px;
+        padding: 2px;
+    }
+
+    #banner{
+        margin-left: -8px;
+    }
+
+    #footer .wrap > div {
+        width: 24%;
+        margin: 37px;
+    }
+}
+
+@media(max-width:890px){
+    .card {
+        width: 16%;
+        margin: 14px;
+    }
+
+    aside h3{
+        font-size: 20px;
+    }
+
+    #footer .wrap > div{
+        width: 26%;
+        margin: 29px;
+    }
+
+    #banner{
+        margin-left: -9px;
+    }
+}
+
+@media(max-width: 879px){
+    #footer .wrap > div {
+        width: 26%;
+        margin: 28px;    
+    }
+
+    #browsers img{
+        width: 25px;
+    }
+
+    #banner{
+        margin-left: -8px;
+    }
+}
+
+@media(max-width:848px){
+    #footer .wrap > div {
+        width: 25%;
+        margin: 31px;
+    }
+
+    #banner{
+        margin-left: -8px;
+    }
+}
+
+@media(max-width:834px){
+    #login input[type="submit"], #login input[type="button"] {
+        width: 56px;
+    }
+
+    #login a{
+        font-size: 12px;
+    }
+
+    #networks{
+        width: 58%;
+    }
+
+    #footer .wrap > div{
+        width: 26%;
+        margin: 27px;
+    }
+
+    #browsers img{
+        width: 25px;
+    } 
+
+    .card{
+        width: 15%;
+        margin: 17px;
+    }
+
+    #banner{
+        margin-left: -8px;
+    }
+}
+
+@media(max-width:817px){
+    #footer .wrap > div {
+        width: 26%;
+        margin: 26px;
+    }
+}
+
+@media(max-width:800px){
+    form input[type="text"] {
+        width: 83%;
+    }
+
+    #login input[type="submit"], #login input[type="button"] {
+        width: 52px;
+    }
+
+    #login a{
+        font-size: 11px;
+    }
+
+    #footer .wrap > div{
+        width: 26%;
+        margin: 26px;
+    }
+
+    #banner{
+        margin-left: -8px;
+    }
+
+    #banner h1{
+        text-align: center;
+        font-size: 35px;
+        margin-left: -65px;
+    }
+
+    #footer h5{
+        font-size: 22px;
+    }
+
+    .card{
+        height: 50%;
+        width: 15%;
+        margin: 16px;
+    }
+
+    .card .sub{
+        font-size: 15px;
+    }
+
+    .card .description{
+        display: none;
+    }
+
+    #general {
+        margin-top: -180px;
+    }
+
+    #networks{
+        width: 60%;
+    }
+
+    .card .icon{
+        margin-top: -25px;
+    }
+
+    .card:hover .icon{
+        font-size: 50px;
+    }
+}
+
+@media(max-width:787px){
+    #footer .wrap > div{
+        width: 26%;
+        margin: 25px;
+    }
+
+    #banner{
+        margin-left: -9px;
+    }
+
+    #banner h1{
+        margin-left: -80px;
+    }
+
+    form input[type="text"] {
+        width: 82%;
+    }
+
+    .card:hover .icon{
+        font-size: 50px;
+    }
+}
+
+@media(max-width:757px){
+    #banner{
+        margin-left: -9px;
+    }
+
+    #banner h1{
+        margin-left: -90px;
+    }
+
+    #footer .wrap > div{
+        width: 26%;
+        margin: 24px;
+    }
+
+    .card{
+        width: 15%;
+        margin: 15px;
+    }
+
+    #browsers img {
+        width: 24px;
+    }
+}
+
+@media(max-width:739px){
+    #banner{
+        margin-left: -10px;
+    }
+
+    #header{
+        height: 130px;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    #logo{
+        float: none;
+        margin: 0px auto;
+        width: 200px;
+    }
+
+    #menu{
+        clear: both;
+        float: none;
+        width: 466px;
+        margin: 0px auto;
+    }
+
+    .data{
+        font-size: 12px;
+    }
+
+    form input[type="text"] {
+        width: 82%;
+    }
+
+    #login input[type="submit"], #login input[type="button"] {
+        width: 46px;
+        font-size: 12px;
+    }
+
+    #login a{
+        font-size: 10px;
+    }
+
+    #networks{
+        width: 66%;
+    }
+}
+
+@media(max-width:725px){
+
+    #banner{
+        margin-left: -10px;
+    }
+
+    #banner h1{
+        margin-left: -98px;
+    }
+
+    #header{
+        width: 100%;
+        height: 130px;
+        padding-top: 10px;
+    }
+
+    #logo{
+        float: none;
+        width: 200px;
+        margin: 0px auto;
+    }
+
+    #menu{
+        clear: both;
+        float: none;
+        width: 466px;
+        margin: 0px auto;
+    }
+
+    #footer .wrap > div{
+        width: 26%;
+        margin: 23px;
+    }
+
+    .card {
+        width: 15%;
+        margin: 14px;
+    }
+
+    .data{
+        font-size: 11px;
+    }
+
+    form input[type="text"] {
+        width: 82%;
+    }
+
+    #login input[type="submit"], #login input[type="button"] {
+        width: 46px;
+        font-size: 11px;
+    }
+
+    #login a{
+        font-size: 10px;
+    }
+
+    #login input[type="email"], input[type="password"] {
+        width: 81%;
+    }
+
+    #networks {
+        width: 66%;
+    }
+
+    #browsers img {
+        width: 24px;
+    }
+}
+
+@media(max-width:718px){
+    #browsers img {
+        width: 23px;
+    }
+
+    #deck {
+        margin-left: 7px !important;
+        margin-right: 15px;
+    }
+}
+
+@media(max-width:700px){
+    #banner h1{
+        margin-left: -108px;
+    }
+
+    #deck{
+        float: none;
+    }
+
+    .wrap{
+        width: 90%;
+    }
+
+    #browsers img {
+        width: 23px;
+    }
+
+    #sidebar{
+        float: left;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+        margin-top: 0px !important;
+    }
+
+    #content{
+        float: left;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+        margin-top: 20px !important;
+    }
+
+    #login, #networks, #sponsors {
+        width: 95%;
+    }
+    
+    form input[type="text"] {
+        width: 87%;
+    }
+
+    #login input[type="email"], input[type="password"] {
+        width: 96%;
+    }
+
+    #sponsors{
+        display: none;
+    }
+
+    #sp{
+        display: none;
+    }
+
+    #login input[type="submit"], #login input[type="button"] {
+        width: 110px;
+        font-size: 16px;
+    }
+
+    #login a {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:667px){
+    #banner{
+        height: 100px;
+    }
+
+    #banner h1 {
+        margin-left: -125px;
+    }
+
+    .card {
+        width: 15%;
+        margin: 13px;
+    }
+
+    #footer{
+        height: auto;
+    }
+
+    #footer .wrap > div {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    #footer #html {
+        width: 45%;
+    }
+
+    #footer iframe{
+        width: 80%;
+        height: 270px;
+    }
+
+    #browsers img {
+        width: 35px;
+    }
+
+    #name{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:622px){
+    #banner{
+        height: 100px;
+    }
+
+    #banner h1 {
+        margin-left: -142px;
+    }
+
+    .card {
+        width: 15%;
+        margin: 12px;
+    }
+
+    #footer{
+        height: auto;
+    }
+
+    #footer .wrap > div {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    #footer #html {
+        width: 45%;
+    }
+
+    #footer iframe{
+        width: 80%;
+        height: 270px;
+    }
+
+    #browsers img {
+        width: 35px;
+    }
+
+    #name{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:577px){
+    #deck {
+        margin-left: 2px !important;
+    }
+
+    .card {
+        width: 15%;
+        margin: 11px;
+    }
+
+    #banner h1 {
+        margin-left: -164px;
+    }
+
+    #menu ul li a:hover {
+        transform: scale(1, 1);
+    }
+
+    .card {
+        width: 15%;
+        margin: 10px;
+    }
+
+    .card .sub {
+        font-size: 12px;
+    }
+
+    .card .icon{
+        font-size: 35px;
+    }
+
+    .card:hover .icon{
+        font-size: 35px;
+    }
+
+    form input[type="text"] {
+        width: 86%;
+    }
+
+    #login input[type="email"], input[type="password"] {
+        width: 94%;
+    }
+}

@@ -1,0 +1,735 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+@font-face{
+    font-family: "TrebuchetMs";
+    src: url("./fonts/TrebuchetMS.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "BebasNeue";
+    src: url("./fonts/BebasNeue.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'WebSymbolsRegular';
+    src: url('./fonts/websymbols-regular-webfont.eot');
+    src: url('./fonts/websymbols-regular-webfont.eot?#iofix') format('embedded-opentype'),
+        url('./fonts/websymbols-regular-webfont.woff') format('woff'),
+        url('./fonts/websymbols-regular-webfont.ttf') format('truetype'),
+        url('./fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Generales */
+.gear, .icon{
+    font-family: "WebSymbolsRegular";
+}
+
+body{
+    background: url('./img/pattern.png');
+}
+
+
+/* Header */
+
+#header{
+    width: 100%;
+    background: #000000;
+    height: 70px;
+    color: white;
+    font-family: 'BebasNeue';
+    text-transform: uppercase;
+}
+
+.wrap{
+    width: 1182px;
+    margin: 0px auto;
+}
+
+/* Logo */
+#logo{
+    float: left;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #37BCF9;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+
+#logo:hover{
+    border-radius: 2px;
+    color: #000000;
+    background: #cccccc;
+}
+
+#logo h3{
+    display: block;
+    font-size: 40px;
+    float: right;
+    margin-top: 2px;
+    transition: all 300ms;
+    margin-right: 65px;
+}
+
+#logo:hover h3{
+    animation: fromAside 300ms linear;
+}
+
+@keyframes fromAside{
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+#logo .gear{
+    display: block;
+    margin-top: 4px;
+    margin-left: 26px;
+    float: left;
+    font-size: 30px;
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear{
+    form{
+        transform: rotateZ(0deg)
+    }to{
+        transform: rotateZ(360deg);
+    }
+}
+
+#logo:hover .gear{
+    animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/* Menu */
+
+#menu{
+    float: right;
+    height: inherit;
+    background: transparent;
+}
+
+#menu ul{
+    line-height: 70px;
+}
+
+#menu ul li{
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+}
+
+#menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: all 200ms;
+}
+
+#menu ul li a:hover{
+    color: #37BCF9;
+    transform: scale(1.2, 1.2);
+}
+
+/* Banner */
+
+#banner{
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    background: red;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background: url(./img/bakbaner.png);
+    background-position: -200px -200px;
+    animation: backBanner 10s linear;
+    overflow: hidden;
+}
+
+@keyframes backBanner{
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -200px -200px;
+    }
+}
+
+#banner h1{
+    display: block;
+    text-align: center;
+    line-height: 110px;
+    font-family: "BebasNeue";
+    width: 850px;
+    font-size: 45px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0px auto;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    animation: showText 10s linear;
+}
+
+@keyframes showText{
+    0%{
+        transform: translateX(-600%) scale(5, 5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600%) scale(5, 5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5, 5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1, 1);
+        text-shadow: none;
+        color: white;
+        opacity: 1;
+        text-shadow: 2px 2px 1px black;
+    }
+}
+
+/* Cartas */
+
+#deck{
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+.card{
+    display: block;
+    float: left;
+    width: 194px;
+    height: 100%;
+    background: #ffffff;
+    margin: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 2px 2px 2px #cccccc;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: 'TrebuchetMs';
+    transition: all 300ms;
+}
+
+.card:hover{
+    background: #000000;
+}
+
+.card .icon{
+    width: 100%;
+    height: 130px;
+    display: block;
+    font-size: 50px;
+    line-height: 130px;
+    text-align: center;
+    margin: 0px auto;
+    transition: all 300ms;
+}
+
+.card:hover .icon{
+    font-size: 70px;
+    color: #37bcf9;
+    animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon{
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.sub{
+    display: block;
+    letter-spacing: 1px;
+    color: #0E6AA3;
+    text-align: center;
+    font-size: 19px;
+    text-shadow: 0px 0px 1px black;
+    transition: all 300ms;
+}
+
+.card:hover .sub{
+    color: #ffffff;
+    animation: showSub 400ms linear;
+}
+
+@keyframes showSub{
+    from{
+        transform: translateY(-300%);
+        color: black;
+    }
+    to{
+        transform: translateY(0%);
+        color: white;
+    }
+}
+
+.description{
+    margin-top: 25px;
+    color: #0370b9;
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 0px 0px 1px #cccccc;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    color: white;
+    animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription{
+    from{
+        transform: translateX(-300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+/* Aside */
+#sidebar{
+    display: block;
+    width: 300px;
+    min-height: 1200px;
+    font-family: "TrebuchetMs";
+    float: right;
+    margin: 20px;
+    margin-top: -30px !important;
+}
+
+aside h3{
+    display: block;
+    width: auto;
+    height: 45px;
+    line-height: 49px;
+    background: url(./img/pxgray.png), white;
+    box-shadow: 0px 1px 3px #393d3f, 1px 2px 3px #393d3f, 3px 2px 0px #393d3f, 3px 4px 0px #393d3f;
+    text-align: left;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-family: "BebasNeue";
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#aside h3:first-child{
+    margin-top: 0px;
+}
+
+#search{
+    width: 95%;
+    height: 30px;
+    margin: 10px auto;
+    background: white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #cccccc inset;
+}
+
+form input[type="text"]{
+    width: 85%;
+    height: 30px;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #cccccc;
+    padding-left: 5px;
+    transition: all 300ms;
+}
+
+form input[type="text"]:focus{
+    color: #000000;
+}
+
+#search .icon{
+    width: 11%;
+    font-size: 16px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-left: 1px solid #cccccc;
+    cursor: pointer;
+    color: #393d3f;
+}
+
+#login, #networks, #sponsors{
+    width: 85%;
+    height: 210px;
+    background: white;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    box-shadow: 2px 2px 2px #cccccc;
+}
+
+#login input[type="email"], input[type="password"]{
+    display: block;
+    width: 90%;
+    height: 30px;
+    background: transparent;
+    border-radius: 5px;
+    color: #000000;
+    border: 1px solid #cccccc;
+    box-shadow: 1px 1px 4px #cccccc inset;
+    padding-left: 25px;
+    margin: 0px auto;
+    margin-top: 15px;
+    transition: all 300ms;
+}
+
+#login #user, #password{
+    display: block;
+    position: absolute;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+#password{
+    margin-top: 17px;
+    font-size: 20px;
+    padding-left: 8px;
+}
+
+#login input[type="email"]:focus, input[type="password"]:focus{
+    color: #cccccc;
+    box-shadow: 1px 1px 1px gray inset;
+}
+
+#login input[type="submit"], #login input[type="button"]{
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+    border: 1px solid #158765;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "TrebuchetMs";
+    font-weight: lighter;
+    margin-left: 15px;
+    transition: all 300ms;
+    margin-bottom: 20px;
+}
+
+#login input[type="submit"]:hover, #login input[type="button"]:hover{
+    box-shadow: 0px 0px 3px gray;
+}
+
+#login a{
+    font-family: "TrebuchetMs";
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 14px;
+    transition: all 300ms;
+}
+
+#login a:hover{
+    text-shadow: 0px 0px 1px black;
+}
+
+#networks{
+    width: 50%;
+}
+
+#networks a{
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 300ms;
+    color: black;
+}
+
+#networks .overlay{
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #cccccc;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px #cccccc;
+    background: #f4f7fe;
+    position: absolute;
+    padding: 5px;
+    margin-left: 40px;
+    margin-top: -50px;
+    cursor: pointer;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+#networks div:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
+    color: #37bcf9;
+}
+
+#sponsors{
+    width: 65%;
+}
+
+/* Articulos */
+#content{
+    width: 800px;
+    margin-top: 100px;
+}
+
+#content h2{
+    display: block;
+    width: 100%;
+    height: 75px;
+    background: url(./img/pxgray.png), white;
+    line-height: 82px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    box-shadow: 0px 1px 3px #393d3f, 1px 2px 3px #393d3f, 3px 2px 0px #393d3f, 3px 4px 0px #393d3f;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+
+article, #boton{
+    display: block;
+    width: 93%;
+    height: auto;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 10px;
+    font-family: "TrebuchetMs";
+    color: #000000;
+    border: 1px solid #dddddd;
+    box-shadow: 1px 1px 2px #dddddd;
+}
+
+article h4{
+    display: block;
+    font-size: 23px;
+    margin: 3px;
+}
+
+article h4 a{
+    text-decoration: none;
+    color: #00538C;
+}
+
+article h4 a:hover{
+    text-decoration: underline;
+}
+
+.data{
+    float: right;
+    background: #393d3f;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    margin: -11px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.data span{
+    margin: 5px;
+}
+
+#content article p{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#content article p a{
+    text-decoration: none;
+    color: #00538C;
+    transition: all 300ms;
+}
+
+#content article p a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+#boton{
+    margin-top: 46px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "BebasNeue";
+    transition: all 300ms;
+}
+
+#boton:hover{
+    background: #000000;
+    border-radius: 40px;
+}
+
+#boton a{
+    display: block;
+    text-decoration: none;
+    color: #00538C;
+}
+
+#boton:hover a{
+    color: #37bcf9;
+    animation: button 400ms linear;
+}
+
+@keyframes button{
+    from{
+        transform: translateY(-200%);
+        color: transparent;
+    }
+    to{
+        transform: translateY(0%);
+        color: #37bcf9;
+    }
+}
+
+/* Footer */
+#footer{
+    width: 100%;
+    height: 470px;
+    background: #000000;
+    color: #ffffff;
+    display: block;
+    overflow: hidden;
+}
+
+#footer .wrap > div{
+    float: left;
+    width: 310px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMs";
+}
+
+#footer h5{
+    display: block;
+    width: 100%;
+    letter-spacing: 2px;
+    height: 50px;
+    text-align: center;
+    background: url(./img/pxgray.png), #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    font-family: "BebasNeue";
+    line-height: 55px;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#footer #menu_footer ul{
+    text-align: left;
+    margin: 20px;
+    font-family: "TrebuchetMs";
+    font-size: 25px;
+}
+
+#footer #menu_footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#footer #menu_footer ul li a{
+    display: block;
+    height: 40px;
+    color: #37bcf9;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+#footer #menu_footer ul li:hover a{
+    padding-left: 40px;
+    color: #ffffff;
+    width: 100%;
+}       
+
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img{
+    margin-bottom: 15px;
+}
+
+#browsers img{
+    width: 40px;
+}
+
+#general{
+    margin-top: -50px;
+}
