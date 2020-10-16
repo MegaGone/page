@@ -748,6 +748,21 @@
     }
 }
 
+@media(max-width:431px){
+    #banner h1 {
+        margin-left: -230px;
+        font-size: 25px;
+    }
+
+    .data {
+        font-size: 10px;
+    }
+
+    .wrap{
+        width: 90%;
+    }
+}
+
 @media(max-width: 400px){
     .data {
         font-size: 10px;
@@ -780,6 +795,10 @@
 
     article h4 {
         font-size: 17px;
+    }
+    
+    .wrap{
+        width: 90%;
     }
 }
 
@@ -838,5 +857,9 @@
     #banner h1 {
         margin-left: -289px;
         font-size: 17px;
+    }
+    
+    .wrap{
+        width: 90%;
     }
 }
