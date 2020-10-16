@@ -701,3 +701,142 @@
         width: 94%;
     }
 }
+
+@media(max-width:488px){
+    .wrap{
+        width: 90%;
+    }
+
+    #menu{
+        display: block;
+        margin-left: -12px !important;
+    }
+
+    #banner h1 {
+        margin-left: -205px;
+        font-size: 25px;
+    }
+
+    .card{
+        width: 90%;
+        height: 100px;
+        margin: 10px auto;
+    }
+
+    #deck {
+        margin-left: 19px !important;
+    }
+
+    .card .sub {
+        font-size: 14px;
+        margin-top: -28px;
+    }
+}
+
+@media(max-width: 480px){
+    #header{
+        height: 200px;
+    }
+
+    #menu ul li {
+        font-size: 20px;
+        display: block;
+        text-align: left;
+        margin: 0px 0px -38px 0px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px){
+    .data {
+        font-size: 10px;
+    }
+
+    article h4 {
+        font-size: 20px;
+    }
+
+    #banner h1 {
+        margin-left: -245px;
+        font-size: 23px;
+    }
+
+    #deck {
+        margin-left: 16px !important;
+    }
+
+    #networks .overlay {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 2px;
+        width: 30%;
+    }
+    
+    #banner h1 {
+        margin-left: -256px;
+        font-size: 22px;
+    }
+
+    article h4 {
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 360px){
+    #banner h1 {
+        margin-left: -263px;
+        font-size: 21px;
+    }
+
+    .data {
+        font-size: 9px;
+    }
+}
+
+@media(max-width:343px){
+    .data {
+        font-size: 8px;
+    }
+
+    #banner h1 {
+        margin-left: -270px;
+        font-size: 20px;
+    }
+
+    .wrap{
+        width: 95%;
+    }
+
+    form input[type="text"] {
+        width: 85%;
+    }
+}
+
+@media(max-width:330px){
+    .data {
+        font-size: 8px;
+    }
+
+    article h4 {
+        font-size: 16px;
+    }
+
+    #banner h1 {
+        margin-left: -276px;
+        font-size: 19px;
+    }
+
+    #content h2{
+        font-size: 35px;
+    }
+
+    .data {
+        font-size: 10px;
+    }
+
+    #banner h1 {
+        margin-left: -289px;
+        font-size: 17px;
+    }
+}
